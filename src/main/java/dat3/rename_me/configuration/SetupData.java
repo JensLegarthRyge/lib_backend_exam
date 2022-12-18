@@ -5,7 +5,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class SetupDevUsers implements ApplicationRunner {
+public class SetupData implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) {
     }
