@@ -20,11 +20,9 @@ public class Member {
     private String password;
     private String email;
 
-    @OneToMany
-    @JoinTable(name="member_loan")
+    @OneToMany(mappedBy = "member",cascade = CascadeType.ALL)
     private List<Loan> loans;
 
-    @OneToMany
-    @JoinTable(name="member_reservation")
+    @OneToMany(mappedBy = "member",cascade = CascadeType.ALL)
     private List<Reservation> reservations;
 }

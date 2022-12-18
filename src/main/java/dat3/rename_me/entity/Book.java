@@ -22,11 +22,9 @@ public class Book {
     private String publisher;
     private Long publishYear;
 
-    @OneToMany
-    @JoinTable(name="book_loan")
+    @OneToMany(mappedBy = "book",cascade = CascadeType.ALL)
     private List<Loan> loans;
 
-    @OneToMany
-    @JoinTable(name="book_reservation")
+    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
     private List<Reservation> reservations;
 }

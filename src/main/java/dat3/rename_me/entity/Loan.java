@@ -19,11 +19,12 @@ public class Loan {
     private LocalDate checkoutDate;
     private LocalDate dueDate;
     private LocalDate returnDate;
+
     @ManyToOne
-    @JoinTable(name="member_loan")
+    @JoinColumn(name="member_id")
     private Member member;
 
     @ManyToOne
-    @JoinTable(name="book_loan")
+    @JoinColumn(name="book_id")
     private Book book;
 }

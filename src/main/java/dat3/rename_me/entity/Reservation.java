@@ -17,11 +17,12 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDate reservationDate;
+
     @ManyToOne
-    @JoinTable(name="member_reservation")
+    @JoinColumn(name="member_id")
     private Member member;
 
     @ManyToOne
-    @JoinTable(name="book_reservation")
+    @JoinColumn(name="book_id")
     private Book book;
 }
