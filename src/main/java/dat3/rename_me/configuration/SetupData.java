@@ -37,21 +37,21 @@ public class SetupData implements ApplicationRunner {
     public void run(ApplicationArguments args) {
         List<Book> books = List.of(
                 Book.builder()
-                        .isbnNumber(9788771372213L)
+                        .ISBNNumber(9788771372213L)
                         .title("The Hitchhiker's Guide to the Galaxy")
                         .author("Douglas Adams")
                         .publisher("Pan Books")
                         .publishYear(1979L)
                         .build(),
                 Book.builder()
-                        .isbnNumber(9780345391803L)
+                        .ISBNNumber(9780345391803L)
                         .title("The Restaurant at the End of the Universe")
                         .author("Douglas Adams")
                         .publisher("Pan Books")
                         .publishYear(1980L)
                         .build(),
                 Book.builder()
-                        .isbnNumber(9780345391810L)
+                        .ISBNNumber(9780345391810L)
                         .title("Life, the Universe and Everything")
                         .author("Douglas Adams")
                         .publisher("Pan Books")
